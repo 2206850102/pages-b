@@ -41,7 +41,7 @@ module.exports = {
   // "es5"- 在 ES5 中有效的尾随逗号（对象、数组等）。TypeScript 中的类型参数中没有尾随逗号。
   // "none"- 没有尾随逗号。
   // "all"- 尽可能使用尾随逗号（包括函数参数和调用）。要运行，以这种方式格式化的 JavaScript 代码需要一个支持 ES2017（Node.js 8+ 或现代浏览器）或下级编译的引擎。这还可以在 TypeScript 中的类型参数中启用尾随逗号（自 2018 年 1 月发布的 TypeScript 2.7 起支持）。
-  trailingComma: 'es5',
+  trailingComma: 'none',
 
   // 在对象文字中的括号之间打印空格
   bracketSpacing: true,
@@ -114,4 +114,14 @@ module.exports = {
   // false- 不要每行强制执行单个属性。
   // true- 每行强制执行单个属性。
   singleAttributePerLine: false,
+
+  // 覆盖配置项
+  overrides: [
+    {
+      files: '*.html',
+      options: {
+        parser: 'html'
+      }
+    }
+  ]
 }
