@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@rushstack/eslint-patch': ^1.2.0
+  '@varlet/touch-emulator': ^2.4.2
   '@varlet/ui': ^2.4.2
   '@vitejs/plugin-vue': ^3.0.3
   '@vue/eslint-config-prettier': ^7.0.0
@@ -17,6 +18,7 @@ specifiers:
   vue-router: ^4.1.5
 
 dependencies:
+  '@varlet/touch-emulator': registry.npmmirror.com/@varlet/touch-emulator/2.4.2
   '@varlet/ui': registry.npmmirror.com/@varlet/ui/2.4.2_vue@3.2.45
   vue: registry.npmmirror.com/vue/3.2.45
   vue-router: registry.npmmirror.com/vue-router/4.1.6_vue@3.2.45
@@ -262,6 +264,12 @@ packages:
   registry.npmmirror.com/@varlet/shared/2.4.2:
     resolution: {integrity: sha512-orWNQ8iMFRs6djvIvBkHjJPraZ+hiq2hU5e99JJpl7ghvB45EYI00Lq/YOgbwSSjQlLYd7ZcNIQ8QFAvf2hBFw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@varlet/shared/-/shared-2.4.2.tgz}
     name: '@varlet/shared'
+    version: 2.4.2
+    dev: false
+
+  registry.npmmirror.com/@varlet/touch-emulator/2.4.2:
+    resolution: {integrity: sha512-jFk1Lron4shg9OCz2w3ge2TGyDzwc/9rUnR/krmjyfNqZfgOgHJoRkKQs8JG4c71VofKmoEWsCz9/t/zqsmCHg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@varlet/touch-emulator/-/touch-emulator-2.4.2.tgz}
+    name: '@varlet/touch-emulator'
     version: 2.4.2
     dev: false
 
