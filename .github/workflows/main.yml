@@ -23,14 +23,21 @@ jobs:
       # 检出源代码
       - name: Checkout sourc code
         uses: actions/checkout@v3
-      # 安装 npm yarn 依赖等
-      - name: NPM install
-        uses: bahmutov/npm-install@HEAD
+      # 配置nodejs环境
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
-          install-command: yarn
+          node-version: 16
+      # 安装pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: true
       # 构建
       - name: Build dist
-        run: yarn run build
+        run: pnpm run build
       # 把 dist 目录推到 gh-pages 分支
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
