@@ -94,7 +94,7 @@ module.exports = {
   // 是否缩进 Vue 文件中的代码<script>和<style>标签。有些人（比如Vue 的创建者）不会缩进来保存缩进级别，但这可能会破坏编辑器中的代码折叠。
   // false- 不要在 Vue 文件中缩进脚本和样式标签。
   // true- 在 Vue 文件中缩进脚本和样式标签。
-  vueIndentScriptAndStyle: false,
+  vueIndentScriptAndStyle: true,
 
   // 行结束
   // "lf"– 仅换行 ( \n)，常见于 Linux 和 macOS 以及 git repos 内部
