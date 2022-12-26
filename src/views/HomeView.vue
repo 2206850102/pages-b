@@ -1,9 +1,22 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
   <main>
-    <TheWelcome />
+    <var-space>
+      <var-button @click="gotoAboutPage">About Page</var-button>
+      <var-button @click="gotoTextAudio">Text Audio</var-button>
+    </var-space>
   </main>
 </template>
+
+<script setup>
+  import { useRouter } from 'vue-router'
+
+  const router = useRouter()
+
+  const gotoAboutPage = () => {
+    router.push('/about')
+  }
+
+  const gotoTextAudio = () => {
+    router.push('/text-audio')
+  }
+</script>
