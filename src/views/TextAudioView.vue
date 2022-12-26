@@ -1,9 +1,9 @@
 <template>
   <var-space direction="column">
-    <var-select placeholder="选择语言" v-model="data.lang" @change="data.voice = 0">
+    <var-select placeholder="选择语言" v-model="data.lang" @change="data.voice = 0" v-ripple>
       <var-option v-for="lang in internal.langList" :key="lang" :label="lang" />
     </var-select>
-    <var-select placeholder="选择声音" v-model="data.voice">
+    <var-select placeholder="选择声音" v-model="data.voice" v-ripple>
       <var-option v-for="(voice, i) in internal.voiceLists[data.lang]" :key="i" :label="voice.ShortName" :value="i" />
     </var-select>
     <div class="input-number-wrap">
