@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-  import { reactive } from 'vue'
+  import { onMounted, reactive } from 'vue'
   import { Snackbar } from '@varlet/ui'
   import '@varlet/ui/es/snackbar/style/index.js'
 
@@ -195,7 +195,7 @@
       })
   }
 
-  fetchVoiceList()
+  onMounted(fetchVoiceList)
 </script>
 
 <style scoped lang="scss">
