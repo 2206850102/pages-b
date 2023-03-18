@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/text-audio',
       name: 'textAudio',
       component: () => import('../views/TextAudioView.vue')
+    },
+    {
+      path: '/background-effect',
+      name: 'backgroundEffect',
+      component: () => import('../views/BackgroundEffect.vue')
     }
   ]
 })
